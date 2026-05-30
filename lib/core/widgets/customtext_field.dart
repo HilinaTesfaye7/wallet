@@ -29,13 +29,19 @@ class CustomTextField extends StatelessWidget {
       ), // White input text
       decoration: InputDecoration(
         filled: true,
-
-        fillColor: Colors.white.withOpacity(0.06),
+        fillColor: theme.cardColor,
         hintText: hinT,
-        hintStyle: const TextStyle(color: AppColors.textMuted, fontSize: 14),
+        hintStyle: TextStyle(
+          color: theme.textTheme.bodyMedium?.color?.withOpacity(0.6),
+          fontSize: 14,
+        ),
         prefixIcon:
             prefixIcon != null
-                ? Icon(prefixIcon, color: AppColors.textMuted, size: 20)
+                ? Icon(
+                  prefixIcon,
+                  color: theme.textTheme.bodyMedium?.color?.withOpacity(0.6),
+                  size: 20,
+                )
                 : null,
         contentPadding: const EdgeInsets.symmetric(
           horizontal: 16,
