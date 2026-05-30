@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:wallet/core/theme/app_theme.dart';
-import 'package:wallet/features/auth/presentation/screens/login_screen.dart';
 import 'package:wallet/features/auth/presentation/screens/signup_screen.dart';
 
 class MainApp extends StatefulWidget {
